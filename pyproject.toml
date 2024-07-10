@@ -1,0 +1,24 @@
+[tool.poetry]
+name = "pythonproject10-07"
+version = "0.1.0"
+description = ""
+authors = ["Manuchar74 <manucharmuseridze@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^8.2.2"
+
+
+[tool.poetry.group.lint.dependencies]
+isort = "^5.13.2"
+flake8 = "^7.1.0"
+mypy = "^1.10.1"
+black = "^24.4.2"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
