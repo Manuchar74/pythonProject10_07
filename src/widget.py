@@ -38,8 +38,8 @@ def get_data():
     2018-07-11T02:26:18.671407 и возвращает строку с датой в виде
     11.07.2018
     """
-#    data_time = datetime.datetime.now()
-    data_time = '2018-07-11T02:26:18.671407'
+    #    data_time = datetime.datetime.now()
+    data_time = "2018-07-11T02:26:18.671407"
     str_data_time = str(data_time)
     split_data_time = str_data_time.split()
     date = split_data_time[0]
