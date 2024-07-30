@@ -7,7 +7,6 @@
 
 ## Установка
 
-
 1. Клонируйте репозиторий:
    git clone http://github.com/Manuchar74/advancfed_git.git
 
@@ -16,7 +15,6 @@
 + Запуск тестов командой  pytest в Terminal
 
 ## Использование
-
 
 + файл src/masks.py хранит функции из задания №9.1
 + файл src/widget.py хранит функции из задания №9.2
