@@ -10,10 +10,6 @@
 1. Клонируйте репозиторий:
    git clone http://github.com/Manuchar74/advancfed_git.git
 
-## Тестирование
-
-+ Запуск тестов командой  pytest в Terminal
-
 ## Использование
 
 + файл src/masks.py хранит функции из задания №9.1
