@@ -1,10 +1,7 @@
 import pytest
-
 from src.masks import get_mask_card_number, get_mask_account
-
 from src.processing import filter_by_state, sort_by_date
 from src.widget import mask_account_card, get_data
-=======
 from src.widget import mask_account_card
 
 
@@ -16,7 +13,7 @@ def test_get_mask_card_number():
     assert get_mask_card_number(card_number="8990922113665229") == "8990 92** **** 5229"
     assert get_mask_card_number(card_number="5999414228426353") == "5999 41** **** 6353"
 
-=======
+
     with pytest.raises(Exception):
         assert not (len(card_number='59994142')) == 16
 
@@ -27,7 +24,7 @@ def test_get_mask_account():
     assert get_mask_account(user_account='64686473678894779589')
     assert get_mask_account(user_account='35383033474447895560')
 
-=======
+
     with pytest.raises(Exception):
         assert not (len(user_account='353830334744')) == 20
 
@@ -62,8 +59,7 @@ def test_sort_by_date():
                          {'id': 939719570, 'state': 'EXECUTED', 'date': '2018-06-30T02:08:58.425572'}]) == [
                {'id': 41428829, 'state': 'EXECUTED', 'date': '2019-07-03T18:35:29.512364'},
                {'id': 939719570, 'state': 'EXECUTED', 'date': '2018-06-30T02:08:58.425572'}]
-=======
-    ])
+
 def test_mask_account_card(string, expected_result):
     assert mask_account_card(string) == expected_result
 
